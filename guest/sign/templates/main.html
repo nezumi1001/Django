@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="float: right">
+        <a>Welcome! {{ user }}</a><hr/>
+    </div>
+<h1>Login Success!</h1>
+{% for event in events %}
+    <h1>{{ event.name }}</h1><br>
+    <h2>{{ event.address }}</h2><br>
+    <h3>{{ event.start_time }}</h3><br>
+    <hr>
+{% endfor %}
+</body>
+</html>

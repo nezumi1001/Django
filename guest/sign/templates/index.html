@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>DjangoPage</title>
+</head>
+<body>
+<h1>Test</h1>
+<form method="post" action="/login/">
+<input name="username" type="text" placeholder="admin"><br>
+<input name="password" type="password" placeholder="password"><br>
+    <font size="3" color="red">{{ error }}</font><br>
+<button id="btn" type="submit">Login</button>
+    {% csrf_token %}
+</form>
+</body>
